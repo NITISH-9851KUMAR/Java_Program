@@ -7,8 +7,8 @@ public class variable{
         x=20;
         //or
         int y=30; //also declare a variable
-        System.out.println(x);
-        System.out.println(y);
+        System.out.println("The value of x: "+x);
+        System.out.println("The value of y: "+y);
 
         x=40;
         y=90;
