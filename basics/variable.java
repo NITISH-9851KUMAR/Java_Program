@@ -3,7 +3,7 @@ package Java_Program.basics;
 public class variable{
     public static void main(String[] args){
 
-        int x; //declare a variable
+        int x; //declare a variable int datatype
         x=20;
         //or
         int y=30; //also declare a variable
@@ -22,6 +22,12 @@ public class variable{
 
         System.out.println(x+200);
         System.out.println(y+300);
+
+        int m=10, n=30, p=17;  //
+        System.out.println("m "+m+"  n "+n+"  p "+p);
+
+
+
 
     }
 }
