@@ -25,9 +25,5 @@ public class variable{
 
         int m=10, n=30, p=17;  //
         System.out.println("m "+m+"  n "+n+"  p "+p);
-
-
-
-
     }
 }
