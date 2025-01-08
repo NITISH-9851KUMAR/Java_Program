@@ -29,7 +29,6 @@ public class input {
         num4=sc.nextLong();
         System.out.println("output: "+num4+"\n");
 
-
         //float type
         float num5;
         System.out.print("Enter float data type Input: ");
