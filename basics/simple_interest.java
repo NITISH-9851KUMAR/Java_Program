@@ -1,4 +1,4 @@
-package Basic_Java;
+package Java_Program.basics;
 
 import java.util.Scanner;
 public class simple_interest {
