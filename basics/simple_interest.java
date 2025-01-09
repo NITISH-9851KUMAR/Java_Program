@@ -6,18 +6,18 @@ public class simple_interest {
 
         Scanner sc=new Scanner(System.in);
         int principal,rate,time;
-        System.out.print("Enter The principle :");
+        System.out.print("Enter The principle: ");
         principal=sc.nextInt();
 
-        System.out.print("Enter the Rate :");
+        System.out.print("Enter the Rate: ");
         rate=sc.nextInt();
 
-        System.out.print("Enter the Time in Month :");
+        System.out.print("Enter Month: ");
         time=sc.nextInt();
 
         double interest=(principal*time*rate)/100.0;
 
-        System.out.println("Principle Money :"+principal);
-        System.out.println("Interest :"+interest);
+        System.out.println("\nInterest: "+interest);
+        System.out.println("Amount:   "+(principal+interest)+"₹");
     }
 }
