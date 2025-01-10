@@ -2,7 +2,7 @@
 package Java_Program.if_else;
 
 import java.util.Scanner;
-public class diviBy5 {
+public class DiviBy5 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
 
