@@ -22,7 +22,7 @@ public class Rectangle {
         }
       else {
             System.out.println("Area is less than perimeter");
-        }
+      }
 
     }
 }
