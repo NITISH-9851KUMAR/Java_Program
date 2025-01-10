@@ -35,9 +35,6 @@ public class GradeMarks {
         else if(marks>=40 )
             System.out.println("Below Average");
 
-        else if(marks<0 || marks>100)
-            System.out.println("Wrong Input");
-
         else System.out.println("Fail");
 
     }
