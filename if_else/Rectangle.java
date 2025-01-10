@@ -18,11 +18,14 @@ public class Rectangle {
         System.out.printf("Area: %.2f\n",area);
         System.out.printf("Perimeter: %.2f\n",perimeter);
         if(area>perimeter){
-            System.out.println("Area is Greater than perimeter");
+            System.out.println("Area is Greater than perimeter!");
         }
-      else {
-            System.out.println("Area is less than perimeter");
-      }
+        else if (area<perimeter) {
+            System.out.println("Area is less than is Perimeter!");
+        }
+        else{
+            System.out.println("Area is equal to Perimeter!");
+        }
 
     }
 }
