@@ -1,6 +1,6 @@
 package Java_Program.if_else;
 
-public class basic {
+public class Basic {
     public static void main(String[] args) {
 
         int x=10;
