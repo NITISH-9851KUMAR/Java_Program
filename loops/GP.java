@@ -9,7 +9,7 @@ public class GP {
         Scanner sc= new Scanner(System.in);
 
         System.out.print("Enter Number: ");
-        short n= sc.nextShort();
+        byte n= sc.nextByte();
 
         System.out.print("G.P: ");
 
