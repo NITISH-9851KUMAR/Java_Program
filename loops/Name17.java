@@ -8,10 +8,10 @@ public class Name17 {
         System.out.print("Enter NITIYA: ");
         String name=sc.next();
 
-
         if(name.toUpperCase().equals("NITIYA")){
             int n = 6;
-            outer_loop: for (int i = 0; i <= n; i++) {
+            outer_loop: for (int i = 0; i <= n; i++)
+            {
 
                inner_loop1: for (int j = 0; j <= 5; j++) //p
                 {
@@ -39,10 +39,7 @@ public class Name17 {
                 }
 
                 inner_loop3:for (int k = 0; k <= n; k++) // space
-                {
-                    if (k == 0)
-                        System.out.print(" ");
-                }
+                                    if (k == 0) System.out.print(" ");
 
                 inner_loop4:for (int k = 0; k <= 2; k++) //I
                 {
@@ -54,10 +51,8 @@ public class Name17 {
                         System.out.print(" ");
                 }
 
-                inner_loop5:for (int k = 0; k <= n; k++) { //space
-                    if (k == 0)
-                        System.out.print(" ");
-                }
+                inner_loop5:for (int k = 0; k <= n; k++)  //space
+                                if (k == 0) System.out.print(" ");
 
                 inner_loop6:for (int j = 0; j <= n; j++) //Y
                 {
@@ -70,9 +65,7 @@ public class Name17 {
                 }
 
                 inner_loop7:for (int k = 0; k <= n; k++) //space
-                {
-                    if (k == 0) System.out.print(" ");
-                }
+                                if (k == 0) System.out.print(" ");
 
                 inner_loop8:for (int j = 0; j <= n; j++) //A
                 {
@@ -124,7 +117,6 @@ public class Name17 {
 
                 inner_loop12:for (int k = 0; k <= n; k++) //space
                                  if (k == 0) System.out.print(" ");
-
 
                 inner_loop13:for (int k = 0; k <= n; k++) {  //n
                     if (k == 0 || k == 6 || (i == k))
