@@ -3,7 +3,7 @@
 package Java_Program.loops;
 
 import java.util.Scanner;
-public class SumOfNumber {
+public class SumOfDigits {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
 
