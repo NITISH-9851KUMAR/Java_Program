@@ -1,4 +1,4 @@
-/** Write a program to print the product of digit of a given Number.*/
+/** Write a program to print the product of all non-zero digit of a given Number.*/
 
 package Java_Program.loops;
 
@@ -15,8 +15,14 @@ public class ProductOfDigits {
 
         while(num!=0){
             lastDigit= num%10;
-            product*= lastDigit;
-            num/= 10;
+            if(lastDigit==0) {
+                num/= 10;
+                continue;
+            }
+            else{
+                product*= lastDigit;
+                num/= 10;
+            }
         }
         System.out.println("Product of Digits: "+product);
 
