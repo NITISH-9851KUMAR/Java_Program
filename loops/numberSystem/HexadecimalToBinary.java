@@ -2,12 +2,12 @@ package Java_Program.loops.numberSystem;
 
 import java.util.Scanner;
 
-public class HexaToBinary {
+public class HexadecimalToBinary {
     public static String binaryValue(int number){
         //Return the binary number of formal parameter number
 
         //This loop find the binary number
-        if(number==0) return "0000"; //
+        if(number==0) return "0000"; // if number=0 then return 0000 and functions is terminated
         int num= number;
         int rem,val= 0;
         int pow= 1;
@@ -75,17 +75,43 @@ public class HexaToBinary {
         System.out.print("Enter Hexadecimal Number: ");
         String hexValue = sc.next();
 
+        //if first position of string is 0 then skip and go on second position
+        int startIndex=0;
+        if(hexValue.charAt(0)=='0'){
+            startIndex= 1;
+        }
+
         //create a StringBuilder that save the binary value and print in last
         StringBuilder val= new StringBuilder("");
 
-        //Loop execute size of string-1 time
-        for(int i=0;i<hexValue.length();i++){
-            //if first position of string is 0 then skip and go on second position
-            if(hexValue.charAt(0)=='0') continue;
+        //Loop execute, size of string-1 time
+        for(int i=startIndex;i<hexValue.length();i++){
             char ch= hexValue.charAt(i); //Take position by character of String
             val= val.append(binaryFunction(ch)); //call binaryFunction function which calculate the binary number and add into val StringBuilder
         }
+
         //finally print the value of val StringBuilder which is actually binary number od hexadecimal value
-        System.out.println("Binary Value: "+val);
+        System.out.println("Binary Value            : "+val);
+        if(val.charAt(0)== '0'){ //if First position zero then we don't need to print first place 0
+            System.out.print("Shorted Binary Value    : ");
+            if(val.charAt(1)== '0'){ //if second place zero
+                if(val.charAt(2)== '0') {
+                    for(int i=3;i<val.length(); i++){
+                        System.out.print(val.charAt(i));
+                    }
+                }
+                else { //if third place not zero
+                    for (int i = 2; i < val.length(); i++) {
+                        System.out.print(val.charAt(i));
+                    }
+                }
+            }
+
+            else { //if second place not zero
+                for(int i=1;i<val.length(); i++){
+                    System.out.print(val.charAt(i));
+                }
+            }
+        }
     }
 }
