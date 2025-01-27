@@ -3,6 +3,12 @@ package Java_Program.loops.numberSystem;
 import java.util.Scanner;
 
 public class HexadecimalToBinary {
+
+    public static void forLoop(int index, StringBuilder val){ //print final binary value after remove zero from beginning position
+        for(int i=index;i<val.length();i++){
+            System.out.print(val.charAt(i));
+        }
+    }
     public static String binaryValue(int number){
         //Return the binary number of formal parameter number
 
@@ -92,26 +98,20 @@ public class HexadecimalToBinary {
 
         //finally print the value of val StringBuilder which is actually binary number od hexadecimal value
         System.out.println("Binary Value            : "+val);
+
+        //This if statement only remove zero from beginning  position
         if(val.charAt(0)== '0'){ //if First position zero then we don't need to print first place 0
             System.out.print("Shorted Binary Value    : ");
-            if(val.charAt(1)== '0'){ //if second place zero
-                if(val.charAt(2)== '0') {
-                    for(int i=3;i<val.length(); i++){
-                        System.out.print(val.charAt(i));
-                    }
-                }
-                else { //if third place not zero
-                    for (int i = 2; i < val.length(); i++) {
-                        System.out.print(val.charAt(i));
-                    }
-                }
-            }
+            int indexStart;
 
-            else { //if second place not zero
-                for(int i=1;i<val.length(); i++){
-                    System.out.print(val.charAt(i));
-                }
+            if(val.charAt(1)== '0'){ //if second place zero
+                if(val.charAt(2)== '0') indexStart= 3;  //if third place equal to zero
+                else indexStart= 2;                    //if third place not equal to zero
             }
+            else indexStart= 1;             //if second place not equal to zero
+
+            forLoop(indexStart,val); //finally call forLoop function to print binary value after sorted
         }
-    }
+
+    } //Main Function is terminated there
 }
