@@ -41,7 +41,7 @@ public class OctalToBinary {
         //And finally print this value
 
         //Reverse Number
-        //We need to reverse number because we write binary number of octal number from left side like above
+        //We need to reverse number because we write binary number of octal number from left side same as above evaluation
         int reverse=0;
         int lastDigit;
         while(num!=0){
@@ -51,7 +51,7 @@ public class OctalToBinary {
         }
 
         //in this loop they first calculate last digit and find his binary value through function
-        //After that  add in val string
+        //After that add into val string
         //And finally print
         int ld= 0;
         String val="";
