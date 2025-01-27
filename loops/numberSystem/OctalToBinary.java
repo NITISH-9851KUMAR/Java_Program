@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class OctalToBinary {
 
-    public static int binaryNumber(int ld){
-        int num=ld;
+    public static int binaryNumber(int lastDigit){
+        int num=lastDigit;
         int rem,val= 0;
         int pow= 1;
         while(num!= 0){
@@ -19,7 +19,7 @@ public class OctalToBinary {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
 
-        System.out.print("Enter Decimal Number: ");
+        System.out.print("Enter Octal Number: ");
         int num= sc.nextInt();
 
         // Octal to Binary
@@ -57,7 +57,7 @@ public class OctalToBinary {
         String val="";
         while(reverse!=0){
                 ld= reverse%10;
-                val=val+binaryNumber(ld); //Find the binary value of last digit
+                val += binaryNumber(ld); //Find the binary value of last digit
                 reverse/= 10;
         }
         System.out.println("Binary Number: "+val);
