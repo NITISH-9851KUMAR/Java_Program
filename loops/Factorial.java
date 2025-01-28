@@ -16,7 +16,7 @@ public class Factorial {
         int fact=1;
         for(int i=num;i>=1;i--){
             if(i==num){
-                System.out.print(num+"!: "+num+"*");
+                System.out.print(num+"!: "+num+" \u00D7 ");
                 fact*=i;
                 continue;
             }
@@ -25,7 +25,7 @@ public class Factorial {
                 System.out.printf("\n%d!: %d",num,fact);
                 break;
             }
-            System.out.print(i+"*");
+            System.out.print(i+" \u00D7 "); //\u00D7 unicode character print actual sign of multiplication
             fact*=i;
         }
 
