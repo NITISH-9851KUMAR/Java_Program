@@ -4,9 +4,6 @@
 3 3 3 3
 4 4 4 4
  */
-
-
-
 package Java_Program.patternPrinting;
 
 public class PrintNumber {
