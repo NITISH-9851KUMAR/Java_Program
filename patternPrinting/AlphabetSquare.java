@@ -12,10 +12,7 @@ public class AlphabetSquare {
 
         for(int i= 1; i<5; i++){
             for( int j= 1; j<=4; j++){
-                int val= 64;
-                val+= j;
-                char ch= (char)val;
-                System.out.print(ch+" ");
+                System.out.print((char)(j+64)+" ");
             }
             System.out.println();
         }
