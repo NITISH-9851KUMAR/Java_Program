@@ -1,4 +1,4 @@
-package Java_Program;
+package Java_Program.question;
 import java.util.*;
 public class Nptel{
     public static void main(String[] args) {
