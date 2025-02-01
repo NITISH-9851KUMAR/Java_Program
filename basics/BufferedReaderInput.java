@@ -1,10 +1,11 @@
 package Java_Program.basics;
 
-import java.io.*;
-import java.util.InputMismatchException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 
-public class BufferReaderInput {
+public class BufferedReaderInput {
     public static void main(String[] args) {
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
         //Also use Scanner sc= new Scanner(System.in);
