@@ -1,15 +1,14 @@
 package Java_Program.methods;
 public class Power {
-    public static int power(int a, int b){
+    public static int power(int a){
         int pow= 1;
-        for(int i= 1; i<=b; i++)
+        for(int i= 1; i<=2; i++)
             pow*= a;
         return pow;
     }
     public static void main(String[] args) {
-        int a= 5;
-        int b= 2;
-        int pow= power(a,b);
-        System.out.printf("%d power %d: %d",a,b,pow);
+        int a= 8;
+        int pow= power(a);
+        System.out.printf("%d power: %d",a,pow);
     }
 }
