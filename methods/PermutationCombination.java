@@ -2,7 +2,7 @@ package Java_Program.methods;
 
 import java.util.Scanner;
 
-public class CombinationPermutation {
+public class PermutationCombination {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         System.out.print("n: ");
@@ -10,10 +10,10 @@ public class CombinationPermutation {
         System.out.print("r: ");
         byte r= sc.nextByte();
 
-        double per= fact(n)/fact(n-r);
-        double com= per/(fact(r));
-        System.out.printf("Permutation: %.2f\n",per);
-        System.out.printf("Permutation: %.2f",com);
+        double npr= fact(n)/fact(n-r);
+        double ncr= npr/(fact(r));
+        System.out.printf("Permutation: %.2f\n",npr);
+        System.out.printf("Permutation: %.2f",ncr);
     }
 
     private static int fact(float n) {
