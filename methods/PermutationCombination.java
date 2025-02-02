@@ -13,11 +13,10 @@ public class PermutationCombination {
         double npr= fact(n)/fact(n-r);
         double ncr= npr/(fact(r));
         System.out.printf("Permutation: %.2f\n",npr);
-        System.out.printf("Permutation: %.2f",ncr);
+        System.out.printf("Combination: %.2f",ncr);
     }
 
     private static int fact(float n) {
-        if(n==0 ) return 1;
         int fact= 1;
         for(int i= 1; i<=n; i++)
             fact*= i;
