@@ -5,17 +5,19 @@ public class ConstructorPassed {
         String name,course;
         int prn;
         float fee;
-        Student(Student s){ //Parameter as a Constructor
-            name= s.name;
-            prn= s.prn;
-            course= s.course;
-            fee= s.fee;
-        }
         Student(int prn, String name, String course,float fee){
             this.prn= prn;
             this.name= name;
             this.course= course;
             this.fee= fee;
+        }
+        Student(Student s){ //Parameter as a Constructor
+            this(s.prn, s.name,s.course,s.fee);
+            //Both are correct
+//            name= s.name;
+//            prn= s.prn;
+//            course= s.course;
+//            fee= s.fee;
         }
 
         void display(){
