@@ -1,4 +1,4 @@
-package Java_Program.oop;
+package Java_Program.oop.constructor;
 
 public class Constructor {
     public static class Rectangle{
