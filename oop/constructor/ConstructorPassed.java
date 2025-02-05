@@ -1,4 +1,4 @@
-package Java_Program.oop;
+package Java_Program.oop.constructor;
 
 public class ConstructorPassed {
     public  static class Student{
