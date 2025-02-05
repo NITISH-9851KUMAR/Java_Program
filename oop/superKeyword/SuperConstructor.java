@@ -1,6 +1,6 @@
-package Java_Program.oop.inheritance;
+package Java_Program.oop.superKeyword;
 
-public class SuperInheritance {
+public class SuperConstructor {
     public static  class Box{
         double width;
         double height;
