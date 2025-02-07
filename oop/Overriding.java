@@ -7,7 +7,7 @@ public class Overriding {
         }
     }
     public static class Sub extends Super{
-        void display(){ //method name, return type, and parameter same as parent class so it is overriding
+        void display(){ //method name, return type, and parameter same as parent class hence it is overriding
             System.out.println("Main hu Sub class!");
         }
     }
