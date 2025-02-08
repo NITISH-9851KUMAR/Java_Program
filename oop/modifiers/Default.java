@@ -1,6 +1,8 @@
 package Java_Program.oop.modifiers;
 public class Default {
     public static void main(String[] args) {
+        Class1 c=new Class1();
+
 
         //Student class is define width default access modifier in same package modifiers. We can create object of Student class
         Student s1= new Student();
