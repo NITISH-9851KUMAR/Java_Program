@@ -2,8 +2,8 @@
 package Java_Program.methods;
 
 public class MyClass {
-    void show(){
+   public void show(){
         System.out.println("Hello! It is Method MyClass");
-    }
+   }
 }
 
