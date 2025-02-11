@@ -8,5 +8,9 @@ public class ImportUserPackage {
         Rectangle r1= new Rectangle();
         r1.width= 90;
         System.out.println(r1.width);
+
+        Java_Program.patternPrinting.AlphabetPyramid.main(args);
+        //present in patternPrinting package
+        //Without use any import statement
     }
 }
