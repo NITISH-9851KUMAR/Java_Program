@@ -12,6 +12,8 @@ public class ImportClass {
         int num= sc.nextInt();
 
         //When we need to use it only once in the whole program
+        //then we don't need to import the statement
+        //we can directly use the util package
         int x= new java.util.Scanner(System.in).nextInt();
 
     }
