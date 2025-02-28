@@ -5,6 +5,7 @@ public class ThreadMethod {
         public void run(){
             System.out.println("Start ThreadA....");
             for(int i= 1; i<=5; i++){
+                System.out.println("From Thread A with i: " + i);
                 if (i == 1) {
                     // yield (); this stop method for temporary few second
                     // instead of this we can use also sleep method
@@ -15,7 +16,6 @@ public class ThreadMethod {
                         e.printStackTrace();
                     }
                 }
-                System.out.println("From Thread A with i: " + i);
             }
             System.out.println("Existing from Thread A....");
         }
