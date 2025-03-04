@@ -1,6 +1,6 @@
 package Java_Program.multithreaded;
 
-public class ThreadClass {
+public class MultiThread {
     public static class ThreadA extends Thread{
         public void run(){
             for(int i= 0; i<=5; i++)
