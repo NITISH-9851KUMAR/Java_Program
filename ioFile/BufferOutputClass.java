@@ -3,7 +3,7 @@ package Java_Program.ioFile;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 
-public class BufferClass {
+public class BufferOutputClass {
     public static void main(String[] args) throws Exception {
 
         FileOutputStream fOut= new FileOutputStream("N:\\File Handling/File.txt");
