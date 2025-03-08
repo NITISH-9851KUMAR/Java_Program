@@ -8,9 +8,6 @@ package Java_Program.basics;
 
 public class PasswordCheck {
     private String password;
-    PasswordCheck(String pass){
-        this.password= pass;
-    }
     boolean isValidPassword(String password){
         this.password= password;
         //Calculating the password length
@@ -26,7 +23,6 @@ public class PasswordCheck {
         boolean flagChar= false; // means capital letter is not present
 
         char ch;
-        int ascii= 0;
         for(int i= 0; i<passLength; i++){
             ch= password.charAt(i);
             if(Character.isDigit(ch)){ // checking number
@@ -41,14 +37,13 @@ public class PasswordCheck {
                 break;
             }
         }
-        if(flagLength && flagNum && flagChar){
-            return true;
-        }
+        if(flagLength && flagNum && flagChar) return true;
+
         else return false;
     }
     public static void main(String[] args) {
 
-        PasswordCheck pa= new PasswordCheck("Nitiya123");
+        PasswordCheck pa= new PasswordCheck();
         if(pa.isValidPassword("nitiYa@9851prish")){
             System.out.println("Password is valid ");
         }else System.out.println("Password is invalid ");
