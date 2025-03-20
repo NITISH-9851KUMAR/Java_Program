@@ -8,16 +8,16 @@ public class HandlingPrimitiveTypes {
         try{
 
             File primitive= new File("N:\\File Handling/ Handling Primitive.txt");
-//            FileOutputStream fos= new FileOutputStream(primitive);
-//            DataOutputStream dos= new DataOutputStream(fos);
-//
-//            //Write primitive data to the primitive file
-//            dos.writeInt(100);
-//            dos.writeDouble(375.85);
-//            dos.writeBoolean(false);
-//            dos.writeChar('p');
-//            dos.close();
-//            fos.close();
+            FileOutputStream fos= new FileOutputStream(primitive);
+            DataOutputStream dos= new DataOutputStream(fos);
+
+            //Write primitive data to the primitive file
+            dos.writeInt(100);
+            dos.writeDouble(375.85);
+            dos.writeBoolean(false);
+            dos.writeChar('p');
+            dos.close();
+            fos.close();
 
             //Read data from the primitive file
             FileInputStream fis= new FileInputStream(primitive);
