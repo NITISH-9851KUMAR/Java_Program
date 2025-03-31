@@ -19,7 +19,7 @@ public class UpdateTable {
 
             String query= "UPDATE bagmati SET grade= 'C' WHERE prn= 31017";
             int rowAffected= statement.executeUpdate(query);
-            System.out.println("Update data into table");
+            if(rowAffected>0) System.out.println("Update data into table");
 
         }catch(SQLException e){
             System.out.println(e.getSQLState());
@@ -27,13 +27,13 @@ public class UpdateTable {
             System.out.println(e.getMessage());
         }
         catch(ClassNotFoundException e){
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         } finally {
             try{
                 connection.close();
                 statement.close();
             }catch ( SQLException e){
-                e.printStackTrace();
+                System.out.println(e.getMessage());
             }
         }
     }
