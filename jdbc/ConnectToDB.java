@@ -18,8 +18,6 @@ public class ConnectToDB {
 
             connection= DriverManager.getConnection(url, userName, password);
             System.out.println("Database Connection Established");
-
-
         }catch (Exception e){
             System.out.println(e);
             e.printStackTrace();
