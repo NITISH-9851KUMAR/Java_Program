@@ -18,18 +18,24 @@ public class ConnectToDB {
 
             connection= DriverManager.getConnection(url, userName, password);
             System.out.println("Database Connection Established");
-        }catch (Exception e){
-            System.out.println(e);
+        }catch (ClassNotFoundException e){ // Exception for JDBC Driver
+            System.out.println("JDBC Driver not found.");
+            System.out.println("Cannot connect to database server");
             e.printStackTrace();
-            System.out.println("cannot connect to database server");
+        }catch(SQLException e){ //
+            System.out.println("Database can't connect!");
+            e.printStackTrace();
         }finally {
             try {
                 if(connection!=null) {
                     connection.close();
                     System.out.println("Database Connection Terminated");
                 }
-            }catch (Exception e1){}
-        }
+            }catch (Exception e1){
+                System.err.println("Error while closing the connection.");
+                e1.printStackTrace();
+            }
+        }// finally
 
     }
 }
