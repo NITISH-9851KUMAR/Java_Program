@@ -22,6 +22,8 @@ public class InsertData {
             char grade= 'A';
             int prn= 31017;
             String query= String.format("INSERT INTO bagmati(name, prn, grade) VALUES('%s', %d, '%c')",name, prn, grade);
+//            String query= "INSERT INTO bagmati VALUES('Nitish', 31002,'p')";
+//             Also we can use this query for inserting data into table
             int rowAffected= statement.executeUpdate(query);
             if(rowAffected>0)
                 System.out.println("Data Insert Into Table");
@@ -32,8 +34,6 @@ public class InsertData {
             e.printStackTrace();
         }catch(SQLException e){
             System.out.println("Cannot connect to the database");
-            e.printStackTrace();
-        }catch (Exception e){
             e.printStackTrace();
         }
         finally  {
