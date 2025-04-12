@@ -22,7 +22,7 @@ public class ParentException {
                         char ch= "Java".charAt(10);
                         break;
                 }
-            }catch (Exception e){
+            }catch (Exception e){ // Exception is parent class exception
                 System.out.println("In test Case: "+i);
                 System.out.println(e.getMessage()+"\n");
             }
