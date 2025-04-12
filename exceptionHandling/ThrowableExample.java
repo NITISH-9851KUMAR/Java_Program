@@ -7,6 +7,7 @@ public class ThrowableExample {
         }catch (Throwable t) {
             // use when we need to Catch both exceptions and errors
             System.out.println("Error: " + t);
+            System.out.println(t.getMessage());
         }
 
     }
