@@ -7,6 +7,7 @@ public class Simple {
         int b= 0;
         try{
             int z= x/b;
+            System.out.println(z);
         }catch(ArithmeticException e){ // try to give the relevant exception
             System.out.println(e.getMessage());
         }
