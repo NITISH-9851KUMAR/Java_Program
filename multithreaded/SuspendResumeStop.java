@@ -1,13 +1,12 @@
 package Java_Program.multithreaded;
 
-class sus_res_stop implements Runnable{
-    Thread th;
+class ThreadMethods extends Thread{
+//    Thread th;
     boolean suspend_flag, stop_flag;
-    sus_res_stop(String tN){
-        th= new Thread(this, tN);
+    ThreadMethods(String tN){
+//        th= new Thread(this, tN);
         suspend_flag= false;
         stop_flag= false;
-        th.start();
     }
     public void run(){
         try{
@@ -45,26 +44,27 @@ public class SuspendResumeStop {
     public static void main(String[] args) {
 
         try{
-            sus_res_stop s_r_s_t= new sus_res_stop("SRS");
+            ThreadMethods obj= new ThreadMethods("SRS");
             System.out.println("Thread s_r_s_t is created and started");
+            obj.start();
             Thread.sleep(2000);
 
-            s_r_s_t.my_suspend();
+            obj.my_suspend();
             System.out.println("Thread s_r_s_t is suspended");
             Thread.sleep(2000);
 
-            s_r_s_t.my_resume();
+            obj.my_resume();
             System.out.println("Thread s_r_s_t is Resume");
 
-            s_r_s_t.my_suspend();
+            obj.my_suspend();
             System.out.println("Thread s_r_s_t is suspended");
             Thread.sleep(2000);
 
-            s_r_s_t.my_resume();
+            obj.my_resume();
             System.out.println("Thread s_r_s_t is Resume");
             Thread.sleep(2000);
 
-            s_r_s_t.my_stop();
+            obj.my_stop();
             System.out.println("Thread s_r_s_t is Stop");
 
 
