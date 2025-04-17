@@ -15,6 +15,5 @@ public class FileOutputStreamClass {
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
-
     }
 }
