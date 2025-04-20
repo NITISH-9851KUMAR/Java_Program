@@ -5,37 +5,28 @@ import java.io.IOException;
 import java.io.File;
 
 public class RandomAccessClass {
-    public static void main(String[] args) {
+        public static void main(String[] args) throws IOException {
 
-        RandomAccessFile file= null;
-        try{
-            file= new RandomAccessFile("N:\\File Handling/Test2.txt","rw");
-            //Writing to the file
-            file.writeChar('x');
-            file.writeInt(90);
-            file.writeDouble(90.34d);
+            File file= new File("N:\\File Handling\\Buffer File.txt");
 
-            file.seek(0); // Go to the beginning
+            RandomAccessFile rFile = new RandomAccessFile(file, "rw");
+            rFile.writeInt(100); // 4 byte
+            rFile.writeChar('h'); // 2 byte
+            rFile.writeBoolean(true); // 1 byte
+            rFile.writeDouble(32.3d); // 8 byte
+            rFile.writeFloat(23.3f); // 4 byte
 
-            //Reading from the file
-            System.out.println(file.readChar());
-            System.out.println(file.readInt());
-            System.out.println(file.readDouble());
+            // if we want to read from starting  then use seek(0) after 0 byte they will read
+            rFile.seek(0); // after 0(zero) byte they will start read
+            System.out.println(rFile.readInt());
+            System.out.println(rFile.readChar());
+            System.out.println(rFile.readBoolean());
+            System.out.println(rFile.readDouble());
+            System.out.println(rFile.readFloat());
 
-            file.seek(2); //Go to the second item
-            System.out.println(file.readInt());
-            file.seek(3);
+            // if we want to read Boolean then Boolean come after 6th byte
+            rFile.seek(6); // It read after 6 byte
+            System.out.println("\n"+rFile.readBoolean());
 
-            //Go to the end and append false to the file
-            file.seek(file.length());
-            file.writeBoolean(false);
-            file.seek(4);
-            System.out.println(file.readBoolean());
-            file.close();
-
-        }catch (IOException e){
-            System.out.println(e.getMessage());
         }
-
-    }
 }
