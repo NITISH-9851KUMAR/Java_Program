@@ -5,12 +5,14 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.MalformedURLException;
 import java.io.InputStream;
+import java.net.URI;
 public class URLConnectionClass {
     public static void main(String[] args) {
 
         try{
+            URI uri= new URI("https://nptel.ac.in/course.php");
             //create a Object of URL class
-            URL url= new URL("https://nptel.ac.in/course.php");
+            URL url= uri.toURL();
 
             URLConnection urlCon= url.openConnection();
             InputStream stream= urlCon.getInputStream();
@@ -19,6 +21,8 @@ public class URLConnectionClass {
             while((i=stream.read())!=-1){
                 System.out.print((char)i);
             }
+
+            stream.close();
 
         }catch(MalformedURLException e){// catch related to URL class
             System.out.println(e.getMessage());
