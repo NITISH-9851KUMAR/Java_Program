@@ -29,6 +29,6 @@ public class UserException {
             // throw new can print the message
        }
        else out.println("Age is greater then 18");
-        out.println("This line will not be execute if exception occurred!"); // exception occurred this line will not execute
+       out.println("This line will not be executed if exception occurred!"); // exception occurred this line will not execute
     }
 }
