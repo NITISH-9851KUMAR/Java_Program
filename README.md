@@ -1,6 +1,6 @@
 📌 About This Repository
 
-This repository contains all the programs, notes, and practice exercises I write while learning Java programming.
+This repository contains all the basics, advance programs I write while learning Java programming.
 My goal is to understand Java concepts from basics to advanced through hands-on coding.
 
 🎯 Learning Goals
